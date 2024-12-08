@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            height: 100vh;
+            position: relative;
+        }
+
+        .content {
+            /*text-align: center;*/
+            padding: 20px;
+            /*border: 2px solid #FFD700;*/
+            border-radius: 10px;
+            /*background-color: #222;*/
+            /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);*/
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .back-btn:hover {
+            background-color: #555;
+        }
+
+        .footer-link {
+            margin-top: 30px;
+            display: block;
+            font-size: 16px;
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .email {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<button class="back-btn" id="back-btn" onclick="goBack()">Go Back</button>
+<div class="content">
+    <h4>Nina Kerschbaumer</h4>
+<!--    <h5>Zürich/Wien</h5>-->
+    <h4>
+        <a href="mailto:ninuschkababy@gmail.com" class="email">
+            ninuschkababy@gmail.com
+        </a>
+    </h4>
+    <h4>0041/779838521</h4>
+<!--    <span class="footer-link" onclick="goContactPage()">https://whymeproductions.netlify.app/</span>-->
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goContactPage() {
+        const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+        const url = `https://whymeproductions.netlify.app/?lang=${selectedLanguage}`;
+
+        window.open(url, '_blank');
+    }
+
+    const translations = {
+        en: {
+            "back-btn": "Go Back"
+        },
+        de: {
+            "back-btn": "Zurück"
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        const lang = translations[selectedLanguage];
+        document.getElementById('back-btn').textContent = lang['back-btn'];
+    });
+</script>
+</body>
+</html>

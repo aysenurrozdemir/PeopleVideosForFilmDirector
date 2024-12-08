@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menschen dieser Welt">
+    <link rel="stylesheet" href="style.css">
+    <title>Menschen dieser Welt</title>
+</head>
+<body>
+<div id="content">
+    <header>
+        <h2 id="site-title">Menschen dieser Welt</h2>
+<!--        <button class="lang-btn"  id="lang-en">EN</button>-->
+<!--        <button class="lang-btn"  id="lang-de">DE</button>-->
+    </header>
+
+    <!-- Topbar (Season Tabs) -->
+    <div class="topbar">
+        <div>
+            <div style="display: inline-flex">
+                <div class="season-tab active" id="season1-tab">Season 1</div>
+                <div class="season-tab" id="season2-tab">Season 2</div>
+                <div class="season-tab" id="season3-tab">Season 3</div>
+            </div>
+
+            <select class="season-select" id="season-select">
+                <option value="season1">Season 1</option>
+                <option value="season2">Season 2</option>
+                <option value="season3">Season 3</option>
+            </select>
+            <div style="padding-right: 5px;float: right">
+             <button class="nav-btn" onclick="gotoInfoPage()"  id="info-page">Info</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="video-section">
+        <!-- Videos for Season 1 -->
+        <div class="video-gallery" id="season1-videos">
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1035290223')">
+                    <img src="assets/season1-images/andrea.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-1">Andrea</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1035317057')">
+                    <img src="assets/season1-images/sasha.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-2">Sasha</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036426992')">
+                    <img src="assets/season1-images/Franziska.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-3">Franziska</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036438461')">
+                    <img src="assets/season1-images/Annett.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-4">Annett</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036431588')">
+                    <img src="assets/season1-images/Phương.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-5">Phương Anh</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036503059')">
+                    <img src="assets/season1-images/Claudia.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-6">Claudia</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036529353')">
+                    <img src="assets/season1-images/Ricarda.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-7">Ricarda</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036536294')">
+                    <img src="assets/season1-images/Sophie.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-8">Sophie</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036551704')">
+                    <img src="assets/season1-images/Heike.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-9">Heike</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" onclick="showVideo('1036558800')">
+                    <img src="assets/season1-images/Derya.png" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-10">Derya</div> <!-- Tooltip -->
+                </a>
+            </div>
+        </div>
+        <div class="video-gallery" id="season2-videos">
+            <div class="video-item">
+                <a>
+                    <img src="assets/season2-images/season21.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-11">Episode 1</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season2-images/season22.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-12">Episode 2</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season2-images/season23.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-13">Episode 3</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season2-images/season24.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-14">Episode 4</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season2-images/season25.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-15">Episode 5</div> <!-- Tooltip -->
+                </a>
+            </div>
+        </div>
+        <div class="video-gallery" id="season3-videos">
+            <div class="video-item">
+                <a>
+                    <img src="assets/season3-images/season31.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-16">Episode 1</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season3-images/season32.gif" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-17">Episode 2</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season3-images/season33.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-18">Episode 3</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season3-images/season34.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-19">Episode 4</div> <!-- Tooltip -->
+                </a>
+            </div>
+            <div class="video-item">
+                <a>
+                    <img src="assets/season3-images/season35.jpg" alt="Movie">
+                    <div class="play-icon">&#9654;</div> <!-- Play icon -->
+                    <div class="tooltip" id="tooltip-20">Episode 5</div> <!-- Tooltip -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Player Modal -->
+    <div id="video-player">
+        <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!--        <div id="video-description"></div>-->
+        <div style="display: flex;margin-bottom: 30px; justify-content: space-between; width: 100%">
+            <button class="back-btn" id="previous-btn" onclick="navigateVideo('previous')">Previous</button>
+            <button class="back-btn" style="margin-right: 20px;" id="main-btn" onclick="closeVideo()">Back to Main</button>
+            <button class="back-btn" style="margin-right: 30px;" id="next-btn" onclick="navigateVideo('next')">Next</button>
+        </div>
+    </div>
+
+    <div id="footer" style="position: fixed; bottom: 0; left: 0; right: 0; text-align: center; background-color: #333; color: white;">
+        <div class="footer-content">
+            <div style="padding-right: 5px;">
+                        <button class="lang-btn"  id="lang-en">EN</button>
+                        <button class="lang-btn active"  id="lang-de">DE</button>
+            </div>
+            <button class="nav-btn active" style="right: 20px" id="contact-btn" onclick="goContactPage()">Contact</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    window.onload = () => {
+        document.getElementById('content').style.visibility = 'visible';
+        currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        changeLanguage(currentLanguage);
+    };
+    function gotoInfoPage() {
+        window.location.href = "/info.html";
+    }
+
+    document.getElementById('season-select').addEventListener('change', function() {
+        let selectedSeason = this.value;
+        document.querySelectorAll('.season-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.getElementById(selectedSeason + '-tab').classList.add('active');
+    });
+
+    let currentVideoIndex = -1;
+    const videos = {
+        'season1': [
+            {
+                title: 'Andrea',
+                id: '1035290223',
+                description: {
+                    en: 'Andrea',
+                    de: 'Andrea'
+                }
+            },
+            {
+                title: 'Sasha',
+                id: '1035317057',
+                description: {
+                    en: 'Sasha',
+                    de: 'Sasha'
+                }
+            },
+            {
+                title: 'Franziska',
+                id: '1036426992',
+                description: {
+                    en: 'Franziska',
+                    de: 'Franziska'
+                }
+            },
+            {
+                title: 'Annett',
+                id: '1036438461',
+                description: {
+                    en: 'Annett',
+                    de: 'Annett'
+                }
+            },
+            {
+                title: 'Phương Anh',
+                id: '1036431588',
+                description: {
+                    en: 'Phương Anh',
+                    de: 'Phương Anh'
+                }
+            },
+            {
+                title: 'Claudia',
+                id: '1036503059',
+                description: {
+                    en: 'Claudia',
+                    de: 'Claudia'
+                }
+            },
+            {
+                title: 'Ricarda',
+                id: '1036529353',
+                description: {
+                    en: 'Ricarda',
+                    de: 'Ricarda'
+                }
+            },
+            {
+                title: 'Sophie',
+                id: '1036536294',
+                description: {
+                    en: 'Sophie',
+                    de: 'Sophie'
+                }
+            },
+            {
+                title: 'Heike',
+                id: '1036551704',
+                description: {
+                    en: 'Heike',
+                    de: 'Heike'
+                }
+            },
+            {
+                title: 'Derya',
+                id: '1036558800',
+                description: {
+                    en: 'Derya',
+                    de: 'Derya'
+                }
+            },
+        ],
+        'season2': [
+            {
+                title: 'Episode 1',
+                id: '',
+                description: {
+                    en: 'Episode 1',
+                    de: 'Episode 1'
+                }
+            },
+            {
+                title: 'Episode 2',
+                id: '',
+                description: {
+                    en: 'Episode 2',
+                    de: 'Episode 2'
+                }
+            },
+            {
+                title: 'Episode 3',
+                id: '',
+                description: {
+                    en: 'Episode 3',
+                    de: 'Episode 3'
+                }
+            },
+            {
+                title: 'Episode 4',
+                id: '',
+                description: {
+                    en: 'Episode 4',
+                    de: 'Episode 4'
+                }
+            },
+            {
+                title: 'Episode 5',
+                id: '',
+                description: {
+                    en: 'Episode 5',
+                    de: 'Episode 5'
+                }
+            }
+        ],
+        'season3': [
+            {
+                title: 'Episode 1',
+                id: '',
+                description: {
+                    en: 'Episode 1',
+                    de: 'Episode 1'
+                }
+            },
+            {
+                title: 'Episode 2',
+                id: '',
+                description: {
+                    en: 'Episode 2',
+                    de: 'Episode 2'
+                }
+            },
+            {
+                title: 'Episode 3',
+                id: '',
+                description: {
+                    en: 'Episode 3',
+                    de: 'Episode 3'
+                }
+            },
+            {
+                title: 'Episode 4',
+                id: '',
+                description: {
+                    en: 'Episode 4',
+                    de: 'Episode 4'
+                }
+            },
+            {
+                title: 'Episode 5',
+                id: '',
+                description: {
+                    en: 'Episode 5',
+                    de: 'Episode 5'
+                }
+            }
+        ]
+    };
+
+
+    let currentSeason = 'season1';
+
+    const translations = {
+        en: {
+            "season1-tab": "Season 1",
+            "season2-tab": "Season 2",
+            "season3-tab": "Season 3",
+            "tooltip-1": "Andrea",
+            "tooltip-2": "Sasha",
+            "tooltip-3": "Franziska",
+            "tooltip-4": "Annett",
+            "tooltip-5": "Phương Anh",
+            "tooltip-6": "Claudia",
+            "tooltip-7": "Ricarda",
+            "tooltip-8": "Sophie",
+            "tooltip-9": "Heike",
+            "tooltip-10": "Derya",
+            "tooltip-11": "Episode 1",
+            "tooltip-12": "Episode 2",
+            "tooltip-13": "Episode 3",
+            "tooltip-14": "Episode 4",
+            "tooltip-15": "Episode 5",
+            "tooltip-16": "Episode 1",
+            "tooltip-17": "Episode 2",
+            "tooltip-18": "Episode 3",
+            "tooltip-19": "Episode 4",
+            "tooltip-20": "Episode 5",
+            "previous-btn": "Previous",
+            "main-btn": "Back to Main",
+            "next-btn": "Next",
+            "contact-btn": "Contact",
+            // "right-reserved": "©2024 NinaCompanyName. All rights reserved."
+        },
+        de: {
+            "season1-tab": "Season 1",
+            "season2-tab": "Season 2",
+            "season3-tab": "Season 3",
+            "tooltip-1": "Andrea",
+            "tooltip-2": "Sasha",
+            "tooltip-3": "Franziska",
+            "tooltip-4": "Annett",
+            "tooltip-5": "Phương Anh",
+            "tooltip-6": "Claudia",
+            "tooltip-7": "Ricarda",
+            "tooltip-8": "Sophie",
+            "tooltip-9": "Heike",
+            "tooltip-10": "Derya",
+            "tooltip-11": "Episode 1",
+            "tooltip-12": "Episode 2",
+            "tooltip-13": "Episode 3",
+            "tooltip-14": "Episode 4",
+            "tooltip-15": "Episode 5",
+            "tooltip-16": "Episode 1",
+            "tooltip-17": "Episode 2",
+            "tooltip-18": "Episode 3",
+            "tooltip-19": "Episode 4",
+            "tooltip-20": "Episode 5",
+            "previous-btn": "Vorherige",
+            "main-btn": "Zurück zum Hauptmenü",
+            "next-btn": "Nächster",
+            "contact-btn": "Kontakt",
+            // "right-reserved": "©2024 NinaCompanyName. Alle Rechte vorbehalten.",
+        }
+    };
+
+    let currentLanguage = 'en';
+    function changeLanguage(language) {
+        currentLanguage = language;
+        localStorage.setItem('selectedLanguage', language);
+        document.querySelectorAll('.lang-btn').forEach(button => {
+            button.classList.remove('active');
+        });
+        document.getElementById(`lang-${language}`).classList.add('active');
+
+        // Toggle button visibility
+        document.getElementById('lang-en').style.display = language === 'de' ? 'inline-block' : 'none';
+        document.getElementById('lang-de').style.display = language === 'en' ? 'inline-block' : 'none';
+
+        // Update content based on language
+        const lang = translations[language];
+        document.getElementById('season1-tab').textContent = lang['season1-tab'];
+        document.getElementById('season2-tab').textContent = lang['season2-tab'];
+        document.getElementById('season3-tab').textContent = lang['season3-tab'];
+
+        const tooltips = document.querySelectorAll('.tooltip');
+        tooltips.forEach((tooltip, index) => {
+            tooltip.textContent = lang[`tooltip-${index + 1}`];
+        });
+
+        document.getElementById('previous-btn').textContent = lang['previous-btn'];
+        document.getElementById('main-btn').textContent = lang['main-btn'];
+        document.getElementById('next-btn').textContent = lang['next-btn'];
+        document.getElementById('contact-btn').textContent = lang['contact-btn'];
+    }
+
+    // Event listeners
+    document.getElementById('lang-en').addEventListener('click', () => {
+        changeLanguage('en');
+    });
+
+    document.getElementById('lang-de').addEventListener('click', () => {
+        changeLanguage('de');
+    });
+
+    // Initialize the language on page load
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    changeLanguage(savedLanguage);
+
+
+    function showVideo(videoId) {
+        const seasonVideos = videos[currentSeason];
+        currentVideoIndex = seasonVideos.findIndex(video => video.id === videoId);
+
+        const video = seasonVideos[currentVideoIndex];
+        document.getElementById('video-player').classList.add('show');
+        document.getElementById('videoIframe').src = `https://player.vimeo.com/video/${video.id}`; // Embed link
+
+        // const description = video.description[currentLanguage] || video.description['en'];
+        // document.getElementById('video-description').innerHTML = `<p>${description}</p>`;
+        updateNavButtons();
+    }
+
+    function closeVideo() {
+        document.getElementById('video-player').classList.remove('show');
+        document.getElementById('videoIframe').src = '';
+        currentVideoIndex = -1;
+    }
+
+    function updateNavButtons() {
+        const seasonVideos = videos[currentSeason];
+        document.getElementById('previous-btn').style.display = currentVideoIndex > 0 ? 'inline-block' : 'none';
+        document.getElementById('next-btn').style.display = currentVideoIndex < seasonVideos.length - 1 ? 'inline-block' : 'none';
+    }
+
+    function navigateVideo(direction) {
+        const seasonVideos = videos[currentSeason];
+        if (direction === 'previous' && currentVideoIndex > 0) {
+            currentVideoIndex--;
+        } else if (direction === 'next' && currentVideoIndex < seasonVideos.length - 1) {
+            currentVideoIndex++;
+        }
+        const video = seasonVideos[currentVideoIndex];
+        document.getElementById('videoIframe').src = `https://player.vimeo.com/video/${video.id}`;
+        const userLang = currentLanguage;
+
+        const description = typeof video.description === 'object'
+            ? video.description[userLang] || video.description.en
+            : video.description;
+
+        // document.getElementById('video-description').innerHTML = `<p>${description}</p>`;
+        updateNavButtons();
+    }
+
+    document.getElementById('season1-tab').addEventListener('click', () => {
+        showSeason('season1');
+    });
+
+    document.getElementById('season2-tab').addEventListener('click', () => {
+        showSeason('season2');
+    });
+
+    document.getElementById('season3-tab').addEventListener('click', () => {
+        showSeason('season3');
+    });
+
+
+    function showSeason(season) {
+
+        document.querySelectorAll('.season-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        document.getElementById(`${season}-tab`).classList.add('active');
+        currentSeason = season;
+
+        document.querySelectorAll('.video-gallery').forEach(gallery => {
+            gallery.style.display = 'none';
+        });
+        document.getElementById(`${season}-videos`).style.display = 'grid';
+    }
+
+    document.getElementById('season-select').addEventListener('change', function() {
+        let selectedSeason = this.value;
+        showSeason(selectedSeason);
+    });
+
+    function goContactPage() {
+        window.location.href = "contact.html";
+    }
+
+    document.getElementById('season-select').addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
+        selectedOption.style.backgroundColor = "whit";
+        selectedOption.style.color = "black";
+    });
+
+</script>
+
+</body>
+</html>

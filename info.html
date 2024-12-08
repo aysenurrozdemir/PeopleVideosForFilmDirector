@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: #white;
+            overflow-y: scroll;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .back-btn.active {
+            background-color: white;
+            color: #000;
+        }
+
+        .back-btn:hover {
+            background-color: #555;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .content-section {
+            text-align: left;
+            /*max-width: 800px;*/
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .season {
+            margin-top: 20px;
+        }
+
+        .season h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .season p {
+            color: white;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        #info-content {
+            text-align: left;
+        }
+        #info-title {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1 id="info-title">Menschen dieser Welt</h1>
+<p id="info-content">Dokumentarische Serie mit drei Staffeln</p>
+<div class="content-section">
+    <div class="season" id="season-1">
+        <p id="season-1-intro">
+            In der Serie mit derzeit drei geplanten Staffeln geht es darum, die Gegenwart besser
+            zu verstehen. Herangezogen werden jeweils kleine Städte in Deutschland (Kahla,
+            Thüringen), Österreich (Ried im Innkreis, Oberösterreich) und den USA (Monessen,
+            Pennsylvania). Die einzelnen Episoden bestehen grossteils aus ausführlichen
+            Interviews mit ausschließlich Flinta Personen über deren Arbeitsalltag, genauso wie
+            über deren Alltag. Gemäß der Logik einer Serie, ergibt erst die Zusammenstellung
+            der einzelnen Episoden ein Gesamtbild. Dieses Bild kann keine Antwort geben auf
+            die Frage, warum die Welt heute nicht nur zunehmend als komplex zu beschreiben,
+            sondern mitunter auch einfach schlecht ist. Anstatt aber ein kulturpessimistisches
+            Bild zu zeichnen, soll ein Mosaik entstehen, denn auch wenn dieses an manchen
+            Stellen dunkel erscheint, so gibt es immer einzelne Teilchen, die das Licht
+            zurückspiegeln. Dies ist kein religiöses Projekt.
+        </p>
+        <h2 id="season-1-title">Season I: Deutsche Gesänge, 2024</h2>
+        <p id="season-1-description">
+            Warum über eine kleine Stadt in Thüringen, die nach der Wende durch Neonazis und kürzlich durch den
+            einfachen Erwerb von Crystal Meth auffällt einen Film? Und wenn einen Film über diese Stadt, wie erzählt
+            man sowas?
+        </p>
+        <p id="season-1-details">
+            In dem Staffel geht es darum, die ostdeutsche Gegenwart zu verstehen. Herangezogen wird die
+            Stadt Kahla im Saale Holzland Kreis in Thüringen.
+            Kahla ist zum einen bekannt durch Kahla Porzellan, eine Manufaktur mit einer hundertjährigen Geschichte
+            Gebrauchsporzellan, die den zweiten Weltkrieg genauso überlebte wie die Treuhand oder, bis dato, diverse
+            Energiekrisen; zum anderen aber schon auch dadurch, wie rasch eine Gesellschaft durch den günstigen
+            Immobilienerwerb rechter Akteur:innen ideologisch unterwandert werden kann, Stichwort: ein mit der Kahlaer
+            Stadt- regierung unbehelligt kooperierender Karl Heinz Hoffmann samt zugehöriger
+            Wehrsportgruppe.
+        </p>
+        <p id="season-1-focus">
+            Anstatt aber jetzt herzugehen und mit Rechtsextremismus anzufangen, setzt die Staffel bei Lohnarbeit an.
+            Erst die Zusammenstellung der einzelnen Episoden ergeben ein Gesamtbild.Wie man dieses Bild im Umkehrschluss interpretiert, ist die
+            Aufgabe des Publikums, nicht die der Filmemacherin.
+        </p>
+    </div>
+
+    <div class="season" id="season-2">
+        <h2 id="season-2-title">In Produktion/Planung:</h2>
+    </div>
+    <div class="season" id="season-4">
+        <h2 id="season-4-title">Season II: Österreichische Lieder, 2025</h2>
+    </div>
+    <div class="season" id="season-3">
+        <h2 id="season-3-title">Season III: Songs, 2025</h2>
+    </div>
+</div>
+
+<button class="back-btn" id="back-btn" onclick="goBack()">Go Back</button>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    const translations = {
+        en: {
+            "info-title": "Menschen dieser Welt",
+            "info-content": "Documentary series with three seasons.",
+            "season-1-intro": "The series, which currently has three seasons planned, is about making the present better\n" +
+                "to understand. Small towns in Germany are used (Kahla,\n" +
+                "Thuringia), Austria (Ried im Innkreis, Upper Austria) and the USA (Monessen,\n" +
+                "Pennsylvania). The individual episodes consist largely of detailed ones\n" +
+                "Interviews with exclusively Flinta people about their everyday work, as well\n" +
+                "about their everyday life. According to the logic of a series, only the compilation results\n" +
+                "of the individual episodes an overall picture. This picture cannot provide an answer to\n" +
+                "the question of why the world today cannot only be described as increasingly complex,\n" +
+                "but sometimes it's just bad. But instead of a culturally pessimistic one\n" +
+                "To draw a picture, a mosaic should be created, because even if this is on some\n" +
+                "Places appear dark, so there are always individual particles that produce light\n" +
+                "reflect back. This is not a religious project.",
+            "season-1-description": "Why make a film about a small town in Thuringia, known for its history with neonazis and recently for the easy acquisition of crystal meth? And if one were to make a film about this town, how would one tell the story? ",
+            "season-1-details": "This season aims to understand East Germany’s present. The city of Kahla in the Saale-Holzland district of Thuringia is used as the focal point. Kahla is known for Kahla Porcelain, a manufacturer with a century-long history that survived World War II, the Treuhand, and various energy crises; and for how quickly a society can be ideologically infiltrated by right-wing actors through affordable real estate.",
+            "season-1-focus": "Instead of starting with right-wing extremism, this season starts with wage labor. Only by piecing together individual episodes does a complete picture emerge. Conversely, how one interprets this image is the task of the audience, not that of the filmmaker.",
+            "season-2-title": "In Production/Planning:",
+            "season-4-title": "Season II: Austrian Songs, 2025",
+            "season-3-title": "Season III: Songs, 2025",
+            "back-btn": "Go Back"
+        },
+        de: {
+            "info-title": "Menschen dieser Welt",
+            "info-content": "Dokumentarische Serie mit drei Staffeln.",
+            "season-1-intro": " In der Serie mit derzeit drei geplanten Staffeln geht es darum, die Gegenwart besser\n" +
+                "            zu verstehen. Herangezogen werden jeweils kleine Städte in Deutschland (Kahla,\n" +
+                "            Thüringen), Österreich (Ried im Innkreis, Oberösterreich) und den USA (Monessen,\n" +
+                "            Pennsylvania). Die einzelnen Episoden bestehen grossteils aus ausführlichen\n" +
+                "            Interviews mit ausschließlich Flinta Personen über deren Arbeitsalltag, genauso wie\n" +
+                "            über deren Alltag. Gemäß der Logik einer Serie, ergibt erst die Zusammenstellung\n" +
+                "            der einzelnen Episoden ein Gesamtbild. Dieses Bild kann keine Antwort geben auf\n" +
+                "            die Frage, warum die Welt heute nicht nur zunehmend als komplex zu beschreiben,\n" +
+                "            sondern mitunter auch einfach schlecht ist. Anstatt aber ein kulturpessimistisches\n" +
+                "            Bild zu zeichnen, soll ein Mosaik entstehen, denn auch wenn dieses an manchen\n" +
+                "            Stellen dunkel erscheint, so gibt es immer einzelne Teilchen, die das Licht\n" +
+                "            zurückspiegeln. Dies ist kein religiöses Projekt.",
+            "season-1-title": "Season I: Deutsche Gesänge, 2024",
+            "season-1-description": "Warum über eine kleine Stadt in Thüringen, die nach der Wende durch Neonazis und kürzlich durch den einfachen Erwerb von Crystal Meth auffällt einen Film? Und wenn einen Film über diese Stadt, wie erzählt man sowas?",
+            "season-1-details": "In dem Staffel geht es darum, die ostdeutsche Gegenwart zu verstehen. Herangezogen wird die Stadt Kahla im Saale Holzland Kreis in Thüringen. Kahla ist zum einen bekannt durch Kahla Porzellan, eine Manufaktur mit einer hundertjährigen Geschichte Gebrauchsporzellan, die den zweiten Weltkrieg genauso überlebte wie die Treuhand oder, bis dato, diverse Energiekrisen; zum anderen aber schon auch dadurch, wie rasch eine Gesellschaft durch den günstigen Immobilienerwerb rechter Akteur:innen ideologisch unterwandert werden kann.",
+            "season-1-focus": "Anstatt aber jetzt herzugehen und mit Rechtsextremismus anzufangen, setzt die Staffel bei Lohnarbeit an. Erst die Zusammenstellung der einzelnen Episoden ergeben ein Gesamtbild. Wie man dieses Bild im Umkehrschluss interpretiert, ist die Aufgabe des Publikums, nicht die der Filmemacherin.",
+            "season-2-title": "In Produktion/Planung:",
+            "season-4-title": "Season II: Österreichische Lieder, 2025",
+            "season-3-title": "Season III: Songs, 2025",
+            "back-btn": "Zurück"
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        const lang = translations[selectedLanguage];
+
+        document.getElementById('info-title').textContent = lang['info-title'];
+        document.getElementById('info-content').textContent = lang['info-content'];
+        document.getElementById('season-1-title').textContent = lang['season-1-title'];
+        document.getElementById('season-1-intro').textContent = lang['season-1-intro'];
+        document.getElementById('season-1-description').textContent = lang['season-1-description'];
+        document.getElementById('season-1-details').textContent = lang['season-1-details'];
+        document.getElementById('season-1-focus').textContent = lang['season-1-focus'];
+        document.getElementById('season-2-title').textContent = lang['season-2-title'];
+        document.getElementById('season-4-title').textContent = lang['season-4-title'];
+        document.getElementById('season-3-title').textContent = lang['season-3-title'];
+        document.getElementById('back-btn').textContent = lang['back-btn'];
+    });
+</script>
+</body>
+</html>
